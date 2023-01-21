@@ -3,25 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 16px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #000000;
+        font-weight: 400;
+        text-decoration: none solid rgb(68, 68, 68);
+        font-style: normal;
+        font-variant: normal;
+        text-transform: none;
+        
+        
+}
 
 
 .whole {
     border:1px solid red;
     display: grid;
-    grid-template-columns: minmax(max-content,1fr) 1fr 1fr;
+    grid-template-columns: minmax(max-content,200px) minmax(309px,1fr) minmax(309px,1fr);
     grid-template-rows:200px 1fr 1fr;
     grid-template-areas: "side header header"
     "side main main "
-    "side main main ";
-    height: 100vh;
+    "side main main "
+     ;
+    
 }
 
 .side {
-    border: 1px solid green;
+    border: 1px solid #2272FF;
     grid-area: side;
     display: grid;
-    background-color: blue;
+    background-color:black;
     grid-template-rows: minmax(50px,100px) minmax(max-content,200px) minmax(100px,150px);
+    height: 100%;
+    color:#2272FF;
+    box-shadow: 0 0 5px 1px rgb(219, 6, 6);
+    border-radius: 10px;
+    text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
+    padding: 10px;
 
     
 }
@@ -30,28 +52,52 @@
     grid-area: header;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
-    background-color: brown;
+    background-color: black;
+    color:#2272FF;
 }
 .main {
     border: 1px solid blue;
     grid-area: main;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    background-color: #2272FF;
 }
 
 /* side area*/
 .side-box1{
-    border: 1ox solid red;
-    height:10px;
+    border: 1px solid red;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
    
+}
+.side-box1 img{
+    width: 20%;
+    height: 30%;
+    
+    margin-top: 10px;
+    position:relative;
+    top: 8px;
+}
+.home img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
 }
 .side-box2{
     border: 1px solid green;
     display:grid;
     align-content:space-around;
+    padding-left: 10px;
+    line-height: 3;
+    position: relative;
 }
 .side-box3{
     border: 1px solid yellow;
+    padding-left: 10px;
+    display: grid;
+    align-content: space-around;
 }
 
 /*header area*/
@@ -79,12 +125,67 @@
     justify-content: space-around;
     align-items: center;
 }
-.one{
+.header-one{
 grid-area: one;
 }
-.two{
+.header-two{
 grid-area: two;
 }
-.three{
+.header-three{
 grid-area: three;
 }
+
+/*main area*/
+.main-one{
+border: 1px solid green ;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+grid-auto-rows: 1fr ;
+}
+.main-two{
+border: 1px solid black;
+display: grid;
+grid-template-columns: minmax(max-content,1fr);
+}
+.story1{
+    border: 1px solid black;
+    
+    display: grid;
+    grid-template-rows:1fr 80px;
+}
+.story2{
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows:1fr 80px;
+}
+.story3{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows:1fr 80px;
+}
+.story4{
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows:1fr 80px;
+}
+.story5{
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows:1fr 80px;
+}
+.story6{
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows:1fr 80px;
+}
+.button{
+   
+    align-self: end;
+    border: 1px solid purple;
+    height: 30%;
+    width: 30%;
+    }
+    .text{
+        border: 1px solid pink;
+        
+    }
