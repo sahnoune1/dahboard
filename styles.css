@@ -21,7 +21,7 @@ body{
 
 
 .whole {
-    border:1px solid red;
+    
     display: grid;
     grid-template-columns: minmax(max-content,200px) minmax(309px,1fr) minmax(309px,1fr);
     grid-template-rows:200px 1fr 1fr;
@@ -33,43 +33,45 @@ body{
 }
 
 .side {
-    border: 1px solid #2272FF;
+    
     grid-area: side;
     display: grid;
     background-color:black;
     grid-template-rows: minmax(50px,100px) minmax(max-content,200px) minmax(100px,150px);
     height: 100%;
     color:#2272FF;
-    box-shadow: 0 0 5px 1px rgb(219, 6, 6);
-    border-radius: 10px;
+   
+    
     text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
     padding: 10px;
 
     
 }
 .header {
-    border: 1px solid orange;
+    border: 1px solid rgb(0, 0, 0);
     grid-area: header;
     display: grid;
     grid-template: 1fr 1fr / 2fr 1fr;
-    background-color: black;
-    color:#2272FF;
+    background-color: #2272FF;
+    color:#000000;
+    box-shadow: 0 0 5px 1px #2272FF;
 }
 .main {
     border: 1px solid blue;
     grid-area: main;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: #2272FF;
+    background-color: #ffffff;
 }
 
 /* side area*/
 .side-box1{
-    border: 1px solid red;
+   
     padding-left: 10px;
     padding-top: 10px;
     position: relative;
-   
+    border: 1px solid #2272FF;
+    box-shadow: 0 0 5px 1px #2272FF;
 }
 .side-box1 img{
     width: 20%;
@@ -85,16 +87,65 @@ body{
     position: relative;
     top: 8px;
 }
+.profile img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
+}
+.message img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
+}
+.history img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
+}
+.tasks img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
+}
+.community img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
+}
+.settings img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
+}
+.support img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
+}
+.privacy img{
+    width: 20%;
+    height: 60%;
+    position: relative;
+    top: 8px;
+}
 .side-box2{
-    border: 1px solid green;
+    border: 1px solid #2272FF;
     display:grid;
     align-content:space-around;
     padding-left: 10px;
     line-height: 3;
     position: relative;
+    box-shadow: 0 0 5px 1px #2272FF;
 }
 .side-box3{
-    border: 1px solid yellow;
+    
     padding-left: 10px;
     display: grid;
     align-content: space-around;
@@ -189,3 +240,49 @@ grid-template-columns: minmax(max-content,1fr);
         border: 1px solid pink;
         
     }
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+    body{
+      background: #f2f2f2;
+      font-family: 'Open Sans', sans-serif;
+    }
+    
+    .search {
+      
+      position: relative;
+      display: flex;
+    }
+    
+    .searchTerm {
+      width: 100%;
+      border: 3px solid #00B4CC;
+      border-right: none;
+      padding: 5px;
+      height: 20px;
+      border-radius: 5px 0 0 5px;
+      outline: none;
+      color: #9DBFAF;
+    }
+    
+    .searchTerm:focus{
+      color: #00B4CC;
+    }
+    
+    .searchButton {
+      width: 40px;
+      height: 36px;
+      border: 1px solid #00B4CC;
+      background: #00B4CC;
+      text-align: center;
+      color: #fff;
+      border-radius: 0 5px 5px 0;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    
+    .wrap{
+        padding-top: 40px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+  
