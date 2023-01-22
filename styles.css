@@ -1,12 +1,17 @@
 * {
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+:root {
+    font-size: 16px;
+  }
+
 body{
     
-        font-family: "Trebuchet MS", Helvetica, sans-serif;
-        font-size: 16px;
+        
         letter-spacing: 2px;
         word-spacing: 2px;
         color: #000000;
@@ -29,6 +34,7 @@ body{
     "side main main "
     "side main main "
      ;
+     
     
 }
 
@@ -36,32 +42,39 @@ body{
     
     grid-area: side;
     display: grid;
-    background-color:black;
+    background-color:rgb(255, 255, 255);
     grid-template-rows: minmax(50px,100px) minmax(max-content,200px) minmax(100px,150px);
     height: 100%;
     color:#2272FF;
-   
-    
+    border-radius: 20px;
+    border:8px solid #e95d00;
     text-shadow: 0 0 15px rgb(255, 255, 255), 0 0 10px rgb(255, 255, 255);
     padding: 10px;
+    margin: 10px;
 
     
 }
 .header {
-    border: 1px solid rgb(0, 0, 0);
+    border:8px solid #e95d00;
     grid-area: header;
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
-    background-color: #2272FF;
+    grid-template: 80px 3fr / 2fr minmax(271px,1fr);
+    background-color: #ffffff;
     color:#000000;
     box-shadow: 0 0 5px 1px #2272FF;
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
 }
 .main {
-    border: 1px solid blue;
+    border:8px solid #e95d00;
     grid-area: main;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    background-color: #ffffff;
+    
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
 }
 
 /* side area*/
@@ -70,8 +83,8 @@ body{
     padding-left: 10px;
     padding-top: 10px;
     position: relative;
-    border: 1px solid #2272FF;
-    box-shadow: 0 0 5px 1px #2272FF;
+    
+    /*box-shadow: 0 0 5px 1px #2272FF;*/
 }
 .side-box1 img{
     width: 20%;
@@ -136,13 +149,13 @@ body{
     top: 8px;
 }
 .side-box2{
-    border: 1px solid #2272FF;
+    
     display:grid;
     align-content:space-around;
     padding-left: 10px;
     line-height: 3;
     position: relative;
-    box-shadow: 0 0 5px 1px #2272FF;
+  
 }
 .side-box3{
     
@@ -153,93 +166,278 @@ body{
 
 /*header area*/
 .header-box1{
-    border: 1px solid red;
+    border-right: 1px solid black;
 }
 .header-box2{
-    border: 1px solid green;
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    position: relative;
+}
+.one{
+    
+    display: flex;
+    justify-content: center;
+}
+.one img{
+    
+    border-radius: 40px;
+    width: 40px;
+    margin-left: 50px;
+        
+
+}
+.two{
+    
+    display: flex;
+    justify-content: center;
+}
+.two img{
+    border: 6px solid #03c3d1;
+    border-radius: 40px;
+    margin-left: 50px;
+width: 15%;
+height: 1%;
+min-width: 65px;
+
+}
+.three {
+    
+}
+.three img{
+    
+    border-radius: 40px;
+    margin-left: 50px;
+width: 10%;
+height: 5%;
+min-width: 43px;
 }
 .header-box3{
-    border: 1px solid yellow;
+    border: 1px solid black;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "one two"
                          "one three"
                          "one three";
+                         border-bottom-left-radius: 19px;
 }
 .header-box4{
-    border: 1px solid black;
+    
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .header-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 grid-area: one;
+
+
+
+}
+.header-one img{
+    border: 6px solid #03c3d1;
+    border-radius: 40px;
+    
+width: 35%;
+height: 90%;
+
+min-width: 80px;
+
+
+
 }
 .header-two{
 grid-area: two;
+border-bottom: 1px solid black;
+border-left: 1px solid black;
+display: flex;
+align-items: center;
+color: #03c3d1;
+
 }
 .header-three{
+    
+    font-weight: 100px;
+    font-size: 20px;
+    font-weight: bold;
 grid-area: three;
+border-left: 1px solid black;
+display: flex;
+align-items: center;
+color: #03c3d1;
 }
 
+.button1 {
+    width: 25%;
+    min-width: 70px;
+    color: rgb(255, 255, 255); 
+    font-size: 17px; 
+    line-height: 17px; 
+    padding: 10px; 
+    border-radius: 31px; 
+    font-family: Georgia, serif; font-weight: normal; 
+    text-decoration: none; 
+    font-style: normal;
+     font-variant: normal;
+      text-transform: none; 
+      background-image: linear-gradient(to right, #03c3d1 0%, #03c3d1 50%, #03c3d1 100%); 
+      box-shadow: rgb(4, 164, 175) 5px 5px 15px 5px; 
+      border: 2px solid #03c3d1; 
+      display: inline-block;}
+    .button1:hover {
+    background: #1C6EA4; }
+    .button1:active {
+    background: #144E75; }
 /*main area*/
 .main-one{
-border: 1px solid green ;
+
 display: grid;
 grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
 grid-auto-rows: 1fr ;
+gap:10px;
+
 }
+
 .main-two{
-border: 1px solid black;
+    
 display: grid;
 grid-template-columns: minmax(max-content,1fr);
+grid-template-rows: 1fr 1fr;
+margin-left: 10px;
+
+}
+
+.part1{
+    border: 1px solid #e95d00;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 10px;
+    border-left:8px solid #000000;
+    padding: 10px;
+}
+.part2{
+    border: 1px solid #e95d00;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 10px;
+    border-left:8px solid #000000;
+    padding: 10px;   
 }
 .story1{
-    border: 1px solid black;
     
+    border: 1px solid #e95d00;
     display: grid;
     grid-template-rows:1fr 80px;
+    background-color: white;
+    border-left:8px solid #000000;
+    border-radius: 10px;
+    position: relative;
+   
+    
 }
 .story2{
-    border: 1px solid red;
+    border: 1px solid #e95d00;
     display: grid;
     grid-template-rows:1fr 80px;
+    background-color: white;
+    border-left:8px solid #000000;
+    border-radius: 10px;
+    position: relative;
 }
 .story3{
-    border: 1px solid black;
+    border: 1px solid #e95d00;
     display: grid;
     grid-template-rows:1fr 80px;
+    background-color: white;
+    border-left:8px solid #000000;
+    border-radius: 10px;
+    position: relative;
 }
 .story4{
-    border: 1px solid red;
+    border: 1px solid #e95d00;
     display: grid;
     grid-template-rows:1fr 80px;
+    background-color: white;
+    border-left:8px solid #000000;
+    border-radius: 10px;
+    position: relative;
 }
 .story5{
-    border: 1px solid black;
+    border: 1px solid #e95d00;
     display: grid;
     grid-template-rows:1fr 80px;
+    background-color: white;
+    border-left:8px solid #000000;
+    border-radius: 10px;
+    position: relative;
 }
 .story6{
-    border: 1px solid red;
     display: grid;
     grid-template-rows:1fr 80px;
+    background-color: white;
+    border-left:8px solid #000000;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #e95d00;
 }
 .button{
-   
-    align-self: end;
+   text-align: center;
+    align-self: center;
+position: relative;
+   margin-left: 20px;
+    padding-bottom: 50px;
+    justify-content: end;
     border: 1px solid purple;
     height: 30%;
-    width: 30%;
+    width: 150px;
+    font-size: 14px;
+    margin-right: 80px;
     }
+    .button {
+        color:#ffffff; 
+        font-size: 16px;
+        line-height: 8px; 
+        padding: 8px; 
+        border-radius: 12px; 
+        font-family: Georgia, serif; 
+        font-weight: normal; 
+        text-decoration: none; 
+        font-style: normal; 
+        font-variant: normal; 
+        text-transform: none; 
+        background-image: linear-gradient(to right, rgb(8, 33, 49) 0%, rgb(3, 12, 17) 50%, rgb(0, 0, 0) 100%);
+         box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; 
+         border-top: none; 
+         border-right: none; 
+         border-bottom: none; 
+         border-left: 8px solid rgb(6, 23, 35);
+          border-image: initial; 
+          display: inline-block;}
+        .button:hover {
+        background: #0a2a3f; }
+        .button:active {
+        background: #144E75; }
     .text{
-        border: 1px solid pink;
+        
+        width: 85%;
+        padding: 10px;
+        position: relative;
+        color: rgb(0, 0, 0);
+align-items: center;
+overflow: hidden;
+word-wrap: break-word;
+text-overflow: ellipsis;
+
         
     }
+    .firstline {
+        margin-bottom: 20px;
+      }
     @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
     body{
@@ -285,4 +483,3 @@ grid-template-columns: minmax(max-content,1fr);
         padding-left: 90px;
         padding-right: 90px;
     }
-  
